@@ -6,7 +6,7 @@
 		<artifactId>Client</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>ws-client</artifactId>
+	<artifactId>wsClient</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Salesforce SOAP API Client</name>
@@ -15,6 +15,11 @@
 		<dependency>
 			<groupId>com.force.api</groupId>
 			<artifactId>force-wsc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.force.au.wsdl</groupId>
+			<artifactId>wsWrapper</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>

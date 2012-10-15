@@ -29,9 +29,9 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.LoginResponse
-     * @throws UnexpectedErrorFault_Exception
      * @throws InvalidIdFault_Exception
      * @throws LoginFault_Exception
+     * @throws UnexpectedErrorFault_Exception
      */
     @WebMethod
     @WebResult(name = "loginResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -47,8 +47,8 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.DescribeSObjectResponse
-     * @throws InvalidSObjectFault_Exception
      * @throws UnexpectedErrorFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "describeSObjectResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -64,8 +64,8 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.DescribeSObjectsResponse
-     * @throws InvalidSObjectFault_Exception
      * @throws UnexpectedErrorFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "describeSObjectsResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -97,8 +97,8 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.DescribeDataCategoryGroupsResponse
-     * @throws InvalidSObjectFault_Exception
      * @throws UnexpectedErrorFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "describeDataCategoryGroupsResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -114,8 +114,8 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.DescribeDataCategoryGroupStructuresResponse
-     * @throws InvalidSObjectFault_Exception
      * @throws UnexpectedErrorFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "describeDataCategoryGroupStructuresResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -131,9 +131,9 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.DescribeLayoutResponse
-     * @throws InvalidSObjectFault_Exception
      * @throws InvalidIdFault_Exception
      * @throws UnexpectedErrorFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "describeLayoutResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -194,10 +194,10 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.CreateResponse
-     * @throws InvalidSObjectFault_Exception
-     * @throws UnexpectedErrorFault_Exception
      * @throws InvalidIdFault_Exception
+     * @throws UnexpectedErrorFault_Exception
      * @throws InvalidFieldFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "createResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -213,10 +213,10 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.UpdateResponse
-     * @throws InvalidSObjectFault_Exception
-     * @throws UnexpectedErrorFault_Exception
      * @throws InvalidIdFault_Exception
+     * @throws UnexpectedErrorFault_Exception
      * @throws InvalidFieldFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "updateResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -232,10 +232,10 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.UpsertResponse
-     * @throws InvalidSObjectFault_Exception
-     * @throws UnexpectedErrorFault_Exception
      * @throws InvalidIdFault_Exception
+     * @throws UnexpectedErrorFault_Exception
      * @throws InvalidFieldFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "upsertResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -251,10 +251,10 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.MergeResponse
-     * @throws InvalidSObjectFault_Exception
-     * @throws UnexpectedErrorFault_Exception
      * @throws InvalidIdFault_Exception
+     * @throws UnexpectedErrorFault_Exception
      * @throws InvalidFieldFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "mergeResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -318,11 +318,11 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.RetrieveResponse
-     * @throws InvalidSObjectFault_Exception
      * @throws InvalidIdFault_Exception
      * @throws UnexpectedErrorFault_Exception
      * @throws MalformedQueryFault_Exception
      * @throws InvalidFieldFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "retrieveResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -403,8 +403,8 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.GetDeletedResponse
-     * @throws InvalidSObjectFault_Exception
      * @throws UnexpectedErrorFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "getDeletedResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -420,8 +420,8 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.GetUpdatedResponse
-     * @throws InvalidSObjectFault_Exception
      * @throws UnexpectedErrorFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "getUpdatedResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -437,12 +437,12 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.QueryResponse
-     * @throws InvalidQueryLocatorFault_Exception
-     * @throws InvalidSObjectFault_Exception
      * @throws InvalidIdFault_Exception
+     * @throws InvalidQueryLocatorFault_Exception
      * @throws UnexpectedErrorFault_Exception
      * @throws MalformedQueryFault_Exception
      * @throws InvalidFieldFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "queryResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -458,12 +458,12 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.QueryAllResponse
-     * @throws InvalidQueryLocatorFault_Exception
-     * @throws InvalidSObjectFault_Exception
-     * @throws UnexpectedErrorFault_Exception
      * @throws InvalidIdFault_Exception
+     * @throws InvalidQueryLocatorFault_Exception
+     * @throws UnexpectedErrorFault_Exception
      * @throws MalformedQueryFault_Exception
      * @throws InvalidFieldFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "queryAllResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -498,10 +498,10 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.SearchResponse
-     * @throws InvalidSObjectFault_Exception
+     * @throws MalformedSearchFault_Exception
      * @throws UnexpectedErrorFault_Exception
      * @throws InvalidFieldFault_Exception
-     * @throws MalformedSearchFault_Exception
+     * @throws InvalidSObjectFault_Exception
      */
     @WebMethod
     @WebResult(name = "searchResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")
@@ -533,8 +533,8 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.SetPasswordResponse
-     * @throws InvalidNewPasswordFault_Exception
      * @throws InvalidIdFault_Exception
+     * @throws InvalidNewPasswordFault_Exception
      * @throws UnexpectedErrorFault_Exception
      */
     @WebMethod
@@ -551,8 +551,8 @@ public interface Soap {
      * @param parameters
      * @return
      *     returns com.force.aus.soap.ResetPasswordResponse
-     * @throws UnexpectedErrorFault_Exception
      * @throws InvalidIdFault_Exception
+     * @throws UnexpectedErrorFault_Exception
      */
     @WebMethod
     @WebResult(name = "resetPasswordResponse", targetNamespace = "urn:enterprise.soap.sforce.com", partName = "parameters")

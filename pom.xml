@@ -8,8 +8,8 @@
 	<name>API Client - Parent</name>
 
 	<modules>
-		<module>ws-client</module>
-		<module>generated</module>
+		<module>wsClient</module>
+		<module>wsWrapper</module>
 	</modules>
 
 
