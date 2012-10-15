@@ -1,0 +1,5 @@
+#surefire
+#Mon Oct 15 22:13:22 EST 2012
+user.dir=/media/home/codebase/Client/generated
+localRepository=/home/bigfoot/.m2/repository
+basedir=/media/home/codebase/Client/generated
