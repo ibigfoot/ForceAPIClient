@@ -2,12 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.force.au.wsdl</groupId>
+		<groupId>com.force.aus.wsdl</groupId>
 		<artifactId>Client</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>wsClient</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Salesforce SOAP API Client</name>
 
@@ -15,9 +14,10 @@
 		<dependency>
 			<groupId>com.force.api</groupId>
 			<artifactId>force-wsc</artifactId>
+			<version>26.0.0</version>
 		</dependency>
 		<dependency>
-			<groupId>com.force.au.wsdl</groupId>
+			<groupId>com.force.aus.wsdl</groupId>
 			<artifactId>wsWrapper</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
