@@ -19,7 +19,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "SforceService", targetNamespace = "urn:enterprise.soap.sforce.com", wsdlLocation = "file:/media/home/codebase/Client/generated/src/wsdl/enterprise.wsdl")
+@WebServiceClient(name = "SforceService", targetNamespace = "urn:enterprise.soap.sforce.com", wsdlLocation = "file:/Users/local/codebase/ForceAPIClient/wsWrapper/src/wsdl/enterprise.wsdl")
 public class SforceService
     extends Service
 {
@@ -32,7 +32,7 @@ public class SforceService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/media/home/codebase/Client/generated/src/wsdl/enterprise.wsdl");
+            url = new URL("file:/Users/local/codebase/ForceAPIClient/wsWrapper/src/wsdl/enterprise.wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
