@@ -11,7 +11,7 @@
 	<name>Salesforce SOAP API Client</name>
 
 	<properties>
-		<wsdl.dir>${basedir}/src/wsdl</wsdl.dir>
+		<wsdl.dir>${basedir}/src/main/resources</wsdl.dir>
 		<wsdl.file>${wsdl.dir}/enterprise.wsdl</wsdl.file>
 		<output.jar>${project.build.directory}/${project.artifactId}.jar</output.jar>
 	</properties>
@@ -24,14 +24,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<resources>
-			<resource>
-				<directory>${wsdl.dir}</directory>
-				<includes>
-					<include>${wsdl.file}</include>
-				</includes>
-			</resource>
-		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.jvnet.jax-ws-commons</groupId>
@@ -47,17 +39,14 @@
 				</executions>
 				<configuration>
 					<packageName>com.force.aus.soap</packageName>
-					<sourceDestDir>${basedir}/src/java/main</sourceDestDir>
+					<sourceDestDir>${basedir}/src/main/java</sourceDestDir>
 				</configuration>
 			</plugin>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-					<compilerArguments>
-						<endorseddirs>${project.build.directory}/endorsed</endorseddirs>
-					</compilerArguments>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 		</plugins>
