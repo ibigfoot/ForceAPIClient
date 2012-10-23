@@ -8,7 +8,7 @@
 	</parent>
 	<artifactId>wsWrapper</artifactId>
 	<packaging>jar</packaging>
-	<name>Salesforce SOAP API Client</name>
+	<name>Salesforce Wrapper</name>
 
 	<properties>
 		<wsdl.dir>${basedir}/src/main/resources</wsdl.dir>
@@ -40,6 +40,7 @@
 				<configuration>
 					<packageName>com.force.aus.soap</packageName>
 					<sourceDestDir>${basedir}/src/main/java</sourceDestDir>
+					<wsdlDirectory>${wsdl.dir}</wsdlDirectory>
 				</configuration>
 			</plugin>
 			<plugin>
