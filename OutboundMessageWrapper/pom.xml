@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.force.aus.wsdl</groupId>
+		<artifactId>Client</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>accountOMWrapper</artifactId>
+	<packaging>jar</packaging>
+	<name>Wrapper for Account Outbound Message</name>
+
+	<properties>
+		<wsdl.dir>${basedir}/src/main/resources</wsdl.dir>
+		<wsdl.file>${wsdl.dir}/accountOM.wsdl</wsdl.file>
+		<output.jar>${project.build.directory}/${project.artifactId}.jar</output.jar>
+		<web.project.repo>/Users/tsellers/git/!defaultRepo!/pure-plateau-6292/repo</web.project.repo>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.sun.xml.ws</groupId>
+			<artifactId>jaxws-rt</artifactId>
+			<version>2.2.6</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jvnet.jax-ws-commons</groupId>
+				<artifactId>jaxws-maven-plugin</artifactId>
+				<version>2.2</version>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>wsimport</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<packageName>com.force.aus.wsdl</packageName>
+					<sourceDestDir>${basedir}/src/main/java</sourceDestDir>
+					<wsdlDirectory>${wsdl.dir}</wsdlDirectory>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
