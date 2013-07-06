@@ -12,7 +12,7 @@
 
 	<properties>
 		<wsdl.dir>${basedir}/src/main/resources</wsdl.dir>
-		<wsdl.file>${wsdl.dir}/enterprise.wsdl</wsdl.file>
+<!-- 		<wsdl.file>${wsdl.dir}/enterprise.wsdl</wsdl.file> -->
 		<output.jar>${project.build.directory}/${project.artifactId}.jar</output.jar>
 	</properties>
 
